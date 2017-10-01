@@ -1,10 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+
+import Game from './containers/Game';
+import store from './redux/store';
 
 import Styles from './index.css';
 
-ReactDOM.render(
-  <App msg="GitHub Battle" />,
+render(
+  <Provider store={store}>
+    <Game />
+  </Provider>,
   document.getElementById('moo')
 )

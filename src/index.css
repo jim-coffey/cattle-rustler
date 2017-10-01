@@ -41,6 +41,10 @@ a {
   width: 80%;
 }
 
+.column input.error {
+  border-color: red;
+}
+
 .column label {
   float: left;
   font-size: 16px;
@@ -103,7 +107,7 @@ a {
   text-align: center;
   display: block;
   padding: 7px 0;
-  margin: 10px auto;
+  margin: auto;
 }
 
 .button:hover:enabled {
@@ -114,4 +118,8 @@ a {
 
 .button:active {
   transform: traslateY(1px);
+}
+
+.button.disabled {
+  background-color: #888;
 }
